@@ -6,9 +6,9 @@
   "scripts": {
     "build": "remix build",
     "postbuild": "remix setup netlify",
-    "dev": "remix vite:dev",
+    "dev": "remix dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "vercel dev",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
     "@remix-run/serve": "^2.16.8",
+    "@remix-run/vercel": "^1.19.3",
     "@types/leaflet": "^1.9.20",
     "isbot": "^4.1.0",
     "leaflet": "^1.9.4",
